@@ -1,0 +1,50 @@
+<div class="container">
+
+    <h2 class="center"> Welcome </h2>
+
+    <form>
+        <div class>
+            <label for="name"> First Name</label>
+            <input type="text" name="name" id="name" placeholder="First Name" [(ngModel)]="newData.fname" style="margin-right: 10px;">
+
+            <label for="name"> Last Name</label>
+            <input type="text" name="name" id="name" placeholder="Last Name" [(ngModel)]="newData.lname">
+        </div>
+
+        <div class="form-group">
+            <label for="adress"> Image  </label>
+            <input type="email" name="name" class="form-control" id="adress" placeholder="email" [(ngModel)]="newData.email">
+
+        </div>
+
+
+
+        <div class="form-group">
+            <label for="adress"> Adress </label>
+            <textarea [(ngModel)]="newData.address"></textarea>
+
+        </div>
+
+        <div class="form-group">
+            <label for="adress"> Image </label>
+            <input type="file" name="img" [(ngModel)]="newData.image">
+
+        </div>
+
+
+
+
+        <!-- <button type="submit" (click)="doCancel()" class="btn btn-success"> Cancel </button> -->
+
+        <button type="submit" (click)="doSubmit()" class="btn btn-success" style="margin-right: 400px;"> Submit </button>
+        <button type="reset" class="btn btn-success"> Cancel </button>
+
+
+
+
+        <!-- 
+
+      <button type="submit" (click)="addBook()" class="btn btn-success">Add</button>
+      <button type="submit" (click)="onBack()" class="btn btn-info">Back</button> -->
+    </form>
+</div>
